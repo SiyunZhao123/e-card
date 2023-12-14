@@ -1,6 +1,7 @@
 /* Include the font */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
 
 body, html {
     margin: 0; 
@@ -191,7 +192,74 @@ input[type="submit"]:hover {
     50% { box-shadow: 0 0 28px 14px #FFEBC6; }
   }
   
+  .heading-container {
+    text-align: center; 
+}
+
+  #animated-heading {
+    font-family: 'Kanit', cursive;
+    color: #31922C; 
+    font-size: 2em;
+    margin: 10px 30px 40px; 
+    display: inline-block; 
+    white-space: nowrap; 
+    animation: pop 0.4s ease-in-out forwards; 
+}
+
+@keyframes pop {
+    0%, 100% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(1.5) rotate(-10deg);
+    }
+}
+
+#verseDisplay {
+  text-align: center; 
+  padding: 0 10%; 
+  font-family: 'Charm', cursive; 
+  z-index: 3;
   
+}
+
+.personalized-greeting {
+  text-align: center; 
+  font-size: 2em; 
+  margin-bottom: 1.3em; 
+  display: block; 
+}
+
+.verse {
+  text-align: center; 
+  font-size: 2em; 
+  display: block; 
+  margin-top: 0.5em;
+}
+
+.church-container {
+  position: absolute;
+  bottom: 50px;
+  left: 0; 
+  z-index: 5; 
+}
+
+.church-image {
+  width: 120px; 
+  height: auto;
+}
+
+.tree-container {
+  position: absolute;
+  bottom: 50px;
+  right: 0; 
+  z-index: 5; 
+}
+
+.tree-image {
+  width: 150px; 
+  height: auto;
+  }
 
   
 footer {
@@ -206,7 +274,7 @@ footer {
     left: 0; 
     bottom: 0; 
     width: 100%;
-    height:80px;
+    height:50px;
     z-index:10;
     
 }
